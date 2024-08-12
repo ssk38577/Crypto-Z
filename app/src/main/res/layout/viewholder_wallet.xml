@@ -8,7 +8,8 @@
     android:layout_marginTop="8dp"
     android:layout_marginEnd="16dp"
     android:layout_marginBottom="8dp"
-    android:background="@drawable/semi_white_bg">
+    android:background="@drawable/semi_white_bg"
+    tools:targetApi="color">
 
 
     <ImageView
@@ -27,19 +28,23 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="Title"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/logoimg"
-        app:layout_constraintTop_toTopOf="@+id/logoimg" />
+        app:layout_constraintTop_toTopOf="@+id/logoimg"
+        tools:targetApi="color" />
 
     <TextView
         android:id="@+id/cryptoPriceTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textColor="@color/white"
         android:textSize="13sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/logoimg"
-        app:layout_constraintStart_toStartOf="@+id/cryptoNameTxt" />
+        app:layout_constraintStart_toStartOf="@+id/cryptoNameTxt"
+        tools:targetApi="color" />
 
     <TextView
         android:id="@+id/changePercentTxt"
@@ -59,10 +64,12 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:text="0.0"
+        android:textColor="@color/white"
         android:textSize="13sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/cryptoNameTxt" />
+        app:layout_constraintTop_toTopOf="@+id/cryptoNameTxt"
+        tools:targetApi="color" />
 
     <TextView
         android:id="@+id/propertyAmountTxt"
@@ -70,7 +77,9 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:text="0"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/cryptoPriceTxt"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:targetApi="color" />
 </androidx.constraintlayout.widget.ConstraintLayout>
